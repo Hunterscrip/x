@@ -2,8 +2,8 @@
 ###########- BOT TELE ################
 AKUN="AKUN TROJAN"
 TIMES="10"
-CHATID="5627481033"
-KEY="5684804886:AAFup0F9eqNPL7yIUUmTPE5is2SaAIYZixQ"
+CHATID="56274"
+KEY="568480F9eqNPL7yIUUmTPE5is2SaAIYZixQ"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ##################### END BOT TELE ###############
 
@@ -22,7 +22,7 @@ if [ -z $user ]; then
 echo -e "$COLOR1 ${NC}   [Error] Username cannot be empty "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}                • HayoSia Store •                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}                • RMBL VPN •                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -38,7 +38,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1 ${NC}  Please choose another name."
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}                • HayoSia Store •                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}                • RMBL VPN •                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 read -n 1 -s -r -p "   Press any key to back on menu"
 trojan-menu
@@ -86,7 +86,7 @@ TRX="
 <code>🌟Durasi  : $exp</code>
 <code>🌟Server  : $domain</code>
 <code>────────────────────</code>
-<i>Notifikasi Via DeadrzBOT</i>
+<i>Notifikasi Via RMBLBOT</i>
 <b>Tele : @ProjectDedi_bot</b>
 "
 TEXT="
@@ -108,8 +108,8 @@ TEXT="
 http://${domain}:81/trojan-$user.txt
 <code>️📅 Expired On : $exp</code>
 <code>──────────────────────────</code>
-<i>Notifikasi Via DeadrzBOT</i>
-<b>Tele : @ProjectDedi_bot</b>
+<i>Notifikasi Via RMBLBOT</i>
+<b>Tele : @rmblvpn_bot</b>
 "
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
@@ -137,7 +137,7 @@ echo -e "$COLOR1 ${NC} Link GRPC : "
 echo -e "$COLOR1 ${NC} ${trojanlink1}"
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" 
 echo -e "$COLOR1────────────────────── BY ───────────────────────${NC}"
-echo -e "$COLOR1 ${NC}                • HayoSia Store •                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}                • RMBL VPN •                 $COLOR1 $NC"
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}"
 echo "" 
 #read -n 1 -s -r -p "   Press any key to back on menu"
