@@ -2,9 +2,9 @@
 ###########- BOT TELE ################
 AKUN="AKUN VMESS"
 TIMES="10"
-CHATID="5627481033"
-CHATIDGC="-958733342"
-KEY="5684804886:AAFup0F9eqNPL7yIUUmTPE5is2SaAIYZixQ"
+CHATID="5557374381"
+CHATIDGC="-1001976214511"
+KEY="5656406963:AAEdkArMHoYbxdKhMNqsmHlbv51Nlt6azN0"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ##################### END BOT TELE ###############
 clear
@@ -236,8 +236,8 @@ TEXT="
 http://${domain}:81/vmess-$user.txt
 <code>️📅 Expired On : $exp</code>
 <code>──────────────────────────</code>
-<i>Notifikasi Via DeadrzBOT</i>
-<b>Tele : @ProjectDedi_bot</b>
+<i>Notifikasi Via rmblBOT</i>
+<b>Tele : @rmblvpn_bot</b>
 "
 TRX="
 <code>INFO MASKU -Transaksi</code>
@@ -249,8 +249,8 @@ TRX="
 <code>🌟Expired : $exp</code>
 <code>🌟Server  : $domain</code>
 <code>────────────────────</code>
-<i>Notifikasi Via DeadrzBOT</i>
-<b>Tele : @ProjectDedi_bot</b>
+<i>Notifikasi Via rmblBOT</i>
+<b>Tele : @rmblvpn_bot</b>
 "
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
