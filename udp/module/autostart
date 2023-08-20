@@ -1,11 +1,11 @@
 #!/bin/bash -p
 #Desc: UDPGW Enabler[autostart]
-#Author: mr.vybes
+#Author: rmbl
 #06/04/23
 
 #AUTOMATIC START
 echo "Desc: UDPGW Enabler[auto-starter]"
-echo "Author: mr.vybes"
+echo "Author: rmbl"
 echo "Dat: 06/04/23"
 echo "============="
 echo "UDPGW -ON"
