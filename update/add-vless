@@ -3,9 +3,9 @@
 ###########- BOT TELE ################
 AKUN="AKUN VLESS"
 TIMES="10"
-CHATID="5627481033"
-CHATIDGC="-958733342"
-KEY="5684804886:AAFup0F9eqNPL7yIUUmTPE5is2SaAIYZixQ"
+CHATID="5557374381"
+CHATIDGC="-1001976214511"
+KEY="5656406963:AAEdkArMHoYbxdKhMNqsmHlbv51Nlt6azN0"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ##################### END BOT TELE ###############
 clear
@@ -23,7 +23,7 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 echo -e "$COLOR1 ${NC} [Error] Username cannot be empty "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}                • HayosiaStore •                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}                • RMBL VPN •                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -35,7 +35,7 @@ if [[ ${CLIENT_EXISTS} == '1' ]]; then
 echo -e "$COLOR1 ${NC} Please choose another name."
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}                • HayosiaStore •                 $COLOR1 $NC"
+echo -e "$COLOR1 ${NC}                • RMBL VPN •                 $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -104,8 +104,8 @@ TEXT="
 http://${domain}:81/vless-$user.txt
 <code>️📅 Expired On : $exp</code>
 <code>──────────────────────────</code>
-<i>Notifikasi Via DeadrzBOT</i>
-<b>Tele : @ProjectDedi_bot</b>
+<i>Notifikasi Via RMBLBOT</i>
+<b>Tele : @RMBL_bot</b>
 "
 TRX="
 <code>INFO MASKU -Transaksi</code>
@@ -117,8 +117,8 @@ TRX="
 <code>🌟Expired : $exp</code>
 <code>🌟Server  : $domain</code>
 <code>────────────────────</code>
-<i>Notifikasi Via DeadrzBOT</i>
-<b>Tele : @ProjectDedi_bot</b>
+<i>Notifikasi Via RMBLBOT</i>
+<b>Tele : @rmblvpn</b>
 "
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
