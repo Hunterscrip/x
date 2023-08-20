@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/ndhet/ip/main/access > /root/tmp
+    curl -sS https://raw.githubusercontent.com/Hunterscrip/permission/main/ipmini > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -22,7 +22,7 @@ BURIQ () {
 }
 # https://raw.githubusercontent.com/ndhet/ip/main/access 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/ndhet/ip/main/access | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/Hunterscrip/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/ndhet/ip/main/access | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/Hunterscrip/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -148,21 +148,13 @@ fi
 fi
 
 echo ""
-wget -q https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/dependencies.sh;chmod +x dependencies.sh;./dependencies.sh
+wget -q https://raw.githubusercontent.com/Hunterscrip/x/main/dependencies.sh;chmod +x dependencies.sh;./dependencies.sh
 rm dependencies.sh
 clear
 apt install lolcat -y
 clear
 echo -e "════════════════════════════════════════" | lolcat
-echo -e "█████████" | lolcat
-echo -e "█▄█████▄█╔╦╗╔═╦╗╔══╗╔═╗╔═╗╔═╗─╔╗╔═╗╔═╗╔══╗" | lolcat
-echo -e "█▼▼▼▼▼   ║╔╝╚╗║║╚╗╔╝║╬║║╬║║║║─║║║╦╝║╔╝╚╗╔╝ " | lolcat
-echo -e "█.       ║╚╗╔╩╗║─║║─║╔╝║╗╣║║║╔╣║║╩╗║╚╗─║║─ " | lolcat
-echo -e "█▲▲▲▲▲   ╚╩╝╚══╝─╚╝─╚╝─╚╩╝╚═╝╚═╝╚═╝╚═╝─╚╝─ " | lolcat
-echo -e "█████████ " | lolcat
-echo -e " ██ ██ " | lolcat
-echo -e "════════════════════════════════════════" | lolcat
-echo -e "            [Free Internet]" | lolcat
+echo -e "            [RMBL VPN]" | lolcat
 echo -e "════════════════════════════════════════" | lolcat
 echo -e "${red}    ♦️${NC} ${green} CUSTOM SETUP DOMAIN VPS     ${NC}"
 echo -e "${red}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
@@ -179,9 +171,9 @@ sleep 2
 clear
 rm -rf slhostdns.sh
 
-wget https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/ssh/slhostdns.sh && chmod +x slhostdns.sh && ./slhostdns.sh
+wget https://raw.githubusercontent.com/Hunterscrip/x/main/ssh/slhostdns.sh && chmod +x slhostdns.sh && ./slhostdns.sh
 
-wget https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/ssh/install-sldns && chmod +x install-sldns && ./install-sldns
+wget https://raw.githubusercontent.com/Hunterscrip/x/main/ssh/install-sldns && chmod +x install-sldns && ./install-sldns
 elif test $dom -eq 2; then
 yellow "Add Domain for vmess/vless/trojan dll"
 echo " "
@@ -195,7 +187,7 @@ echo "$pp" > /etc/xray/domain
 echo "$pp" > /etc/xray/scdomain
 echo "IP=$pp" > /var/lib/alexxa-pro/ipvps.conf
 clear
-wget https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/ssh/install-sldns && chmod +x install-sldns && ./install-sldns
+wget https://raw.githubusercontent.com/Hunterscrip/x/main/ssh/install-sldns && chmod +x install-sldns && ./install-sldns
 else 
 echo "Not Found Argument"
 exit 1
@@ -252,20 +244,20 @@ EOF
 echo -e "$green[INFO]$NC Install SSH & OpenVPN!"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/Hunterscrip/x/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "$green[INFO]$NC Install Install XRAY!"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/Hunterscrip/x/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 clear
-wget https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/Hunterscrip/x/main/backup/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 clear
-wget https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/Hunterscrip/x/main/websocket/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 echo -e "$green[INFO]$NC Download Extra Menu"
 sleep 2
-wget https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/update/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/Hunterscrip/x/main/update/update.sh && chmod +x update.sh && ./update.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -292,7 +284,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/ndhet/MULTI-PORT/main/version  )
+serverV=$( curl -sS https://raw.githubusercontent.com/Hunterscrip/x/main/version  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -305,7 +297,7 @@ fi
 curl -sS ifconfig.me > /etc/myipvps
 
 echo " "
-echo "====================-[ HAYOSIASTORE ]-===================="
+echo "====================-[ RMBL VPN ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
@@ -343,11 +335,11 @@ echo "   - Backup & Restore Data" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> About " | tee -a log-install.txt
-echo "   - Script Presented By      : Dedi Humaedi" | tee -a log-install.txt
-echo "   - Contact (Only Text)      : t.me/Putri24v" | tee -a log-install.txt
+echo "   - Script Presented By      : rmbl bpn" | tee -a log-install.txt
+echo "   - Contact (Only Text)      : t.me/rmblvpn" | tee -a log-install.txt
 echo "------------------------------------------------------------"
 echo ""
-echo "=============-[ HAYOSIASTORE ]-==============="
+echo "=============-[ RMBL VPN ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
