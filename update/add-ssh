@@ -2,9 +2,9 @@
 ###########- BOT TELE ################
 AKUN="AKUN SSH"
 TIMES="10"
-CHATID="56273"
-CHATIDGC="-958"
-KEY="568eqNPL7yIUUmTPE5is2SaAIYZixQ"
+CHATID="5557374381"
+CHATIDGC="-1001976214511"
+KEY="5656406963:AAEdkArMHoYbxdKhMNqsmHlbv51Nlt6azN0"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ##################### END BOT TELE ###############
 clear
