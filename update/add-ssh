@@ -126,12 +126,12 @@ TRX="
 <code>🌟Expired : $exp</code>
 <code>🌟Server  : $domen</code>
 <code>────────────────────</code>
-<i>Notifikasi Via DeadrzBOT</i>
-<b>Tele : @ProjectDedi_bot</b>
+<i>Notifikasi RMBLBOT</i>
+<b>Tele : @Rmblvpn_bot</b>
 "
 TEXT="
 <code>────────────────────</code>
-<b>INFO        SSH Account</b>
+<b>        SSH Account</b>
 <code>────────────────────</code>
 <code>Username   : $Login</code>
 <code>Password   : $Pass</code>
@@ -152,8 +152,8 @@ TEXT="
 http://${domen}:81/ssh-$Login.txt
 <code>️📅 Expired On : $exp</code>
 <code>──────────────────────────</code>
-<i>Notifikasi Via DeadrzBOT</i>
-<b>Tele : @ProjectDedi_bot</b>
+<i>Notifikasi Via RmblBOT</i>
+<b>Tele : @Rmblvpn_bot</b>
 "
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
@@ -186,7 +186,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "  GET wss://BUG/ HTTP/1.1[crlf]Host: $domen [crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"  | tee -a /etc/log-create-user.log
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}                • HayoSia Store •                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC}                • RMBL VPN •                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
 else
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
